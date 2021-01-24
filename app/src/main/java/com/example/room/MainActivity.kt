@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val userDao = AppDatabase.getInstance(this).userDao()
 
-        val tom = User(0, "tom", "jack")
-        val tony = User(1, "tony", "white")
+        val tom = User("tom", "jack")
+        val tony = User("tony", "white")
 
         btn_insert.setOnClickListener {
             userDao.insertAll(tom, tony)
